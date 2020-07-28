@@ -26,7 +26,7 @@
       <ul class="blocks-list">
         {{#each categories}}
           {{#if ../has_multiple_categories}}
-            <li class="blocks-item">
+            <li class="blocks-item  shadow-box">
               <a href='{{url}}' class="blocks-item-link">
                 <span class="blocks-item-title">{{name}}</span>
                 <span class="blocks-item-description">{{excerpt description}}</span>
@@ -34,7 +34,7 @@
             </li>
           {{else}}
             {{#each sections}}
-              <li class="blocks-item">
+              <li class="blocks-item shadow-box">
                 <a href='{{url}}' class="blocks-item-link">
                   <span class="blocks-item-title">
                     {{name}}
@@ -51,13 +51,12 @@
 
     {{#if promoted_articles}}
       <section class="articles">
-        <h2>{{t 'promoted_articles'}}</h2>
+        <h2>Popular Articles</h2>
         <ul class="article-list promoted-articles">
           {{#each promoted_articles}}
             <li class="promoted-articles-item">
                 <a href="{{url}}">
                   {{title}}
-
                   {{#if internal}}
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
                       <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
@@ -65,6 +64,8 @@
                     </svg>
                   {{/if}}
                 </a>
+                <span>{{excerpt body characters=80}}</span>
+
             </li>
           {{/each}}
         </ul>

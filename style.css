@@ -6,15 +6,74 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-.article-list-item a {
-    font-weight: 500;
-    color: rgba(9, 112, 206, 1);
+/* Custom styles */
+.article-list-item a, .promoted-articles-item a {
+    font-weight: 600;
+    color: rgba(9, 112, 206, 1)!important;
 }
 .nav-wrapper a.p-top-nav-link {
   color: #557789;
   font-size: 1rem;
   font-weight: 500;
+  padding-right: 2.5rem;
+    padding-left: 0.5rem;
 }
+
+.portify-footer {
+  font-size: 80%;
+  font-weight: 400;
+  color: #557789;
+}
+
+.nav-wrapper a.p-top-nav-link:hover {
+  color: #223843;
+  text-decoration: none;
+}
+
+.recent-activity-list>section:nth-child(n+4) {
+ display: none;
+}
+
+.articles>h2,h2.recent-activity-header {
+  text-align: left!important;
+  font-weight: bold;
+}
+
+.community, .activity {
+    border-top: none!important;
+}
+
+section.categories.blocks {
+    margin-bottom: 60px;
+}
+
+.shadow-box {
+    box-shadow: 0 5px 10px rgba(46,91,255,0.07);
+    background: #FFFFFF;
+    border: 1px solid rgba(205,228,255,0.26);
+    border-radius: 1px;
+}
+
+.blocks-item {
+    border: 1px solid #b1c6d0!important;
+  }
+
+.blocks-item-title {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.promoted-articles-item a {
+    display: block;
+    border-bottom: none!important;
+}
+
+.promoted-articles-item {
+    margin-bottom: 20px;
+}
+
+/* End of custom styles */
 
 body {
   margin: 0;
@@ -199,7 +258,7 @@ template {
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: $text_font;
+  font-family: "Open Sans", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -2021,7 +2080,7 @@ ul {
   -webkit-hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-family: $text_font;
+  font-family: "Open Sans", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -2572,7 +2631,7 @@ ul {
 }
 
 .post-content {
-  font-family: $text_font;
+  font-family: "Open Sans", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
   line-height: 1.6;
   word-break: break-word;
 }
