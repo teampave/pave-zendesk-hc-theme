@@ -66,11 +66,14 @@ section.categories.blocks {
 
 .promoted-articles-item a {
     display: block;
+    font-weight: bold;
+    font-size: large;
     border-bottom: none!important;
 }
 
 .promoted-articles-item {
     margin-bottom: 20px;
+    min-height: 150px;
 }
 
 /* End of custom styles */
