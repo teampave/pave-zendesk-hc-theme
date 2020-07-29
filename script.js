@@ -21,13 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
     } while (element !== null && element.nodeType === 1);
     return null;
   }
-	
+
   var redirects = {
   "/article/5rvh9nrn9h-how-to-make-a-complaint"	: "/hc/en-gb/articles/360011376818-How-to-make-a-complaint",
   "/article/7wrjlt7oft-portify-privacy-policy"	: "/hc/en-gb/articles/360011236978-Portify-Privacy-Policy",
   "/article/q0a7ao5i9x-portify-terms-conditions"	: "/hc/en-gb/articles/360011236958-Portify-General-Terms-Conditions",
   "/article/lkx1ebj2bp-how-do-i-access-flex-finance"	: "/hc/en-gb/articles/360011197797-What-is-Flex-Finance-",
   "/category/mk6g2jv0he-flex-finance"	: "/hc/en-gb/sections/360002958917-Flex-Finance",
+  "/category/9lsthcsp20-about-portify" : "/hc/en-gb/categories/360001833377-General"
 }
 
 if (redirects[location.pathname] !== undefined) {
@@ -245,7 +246,7 @@ if (redirects[location.pathname] !== undefined) {
   }
 
   // Dropdowns
-  
+
   function Dropdown(toggle, menu) {
     this.toggle = toggle;
     this.menu = menu;
