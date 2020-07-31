@@ -25,6 +25,15 @@ html {
   color: #557789;
 }
 
+.lead-title {
+  color: white;
+  position: absolute;
+  top: -67px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
 .nav-wrapper a.p-top-nav-link:hover {
   color: #223843;
   text-decoration: none;
@@ -34,11 +43,13 @@ html {
  display: none;
 }
 
-.articles>h2,h2.recent-activity-header {
+.articles>h2,h2.recent-activity-header, .knowledge-base>h2.category-header {
   text-align: left!important;
   font-weight: bold;
 }
-
+.knowledge-base>h2.category-header {
+  margin-bottom: 35px;
+}
 .community, .activity {
     border-top: none!important;
 }
