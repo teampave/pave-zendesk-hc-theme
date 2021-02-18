@@ -2,9 +2,9 @@
 
 <header class="header">
   <div class="logo">
-    {{#link 'help_center'}}
+    <a class="p-top-nav-link" href="https://portify.co" >
       <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-    {{/link}}
+    </a>
   </div>
   <div class="nav-wrapper">
     <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
@@ -14,11 +14,8 @@
     </button>
     <nav class="user-nav" id="user-nav">
       {{link 'community'}}
-			{{#link 'new_request' class='submit-a-request p-top-nav-link'}}Contact us{{/link}}
       <a class="p-top-nav-link" href="https://portify.co" target="_blank">App</a>
       <a class="p-top-nav-link" href="https://blog.portify.co" target="_blank">Blog</a>
-      <a class="p-top-nav-link" href="https://www.portify.co/about" target="_blank">About us</a>
-      <a class="p-top-nav-link" href="https://www.portify.co/partnerships" target="_blank">Partners</a>
     </nav>
     {{#if signed_in}}
       <div class="user-info dropdown">
