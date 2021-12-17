@@ -9,10 +9,10 @@ html {
 /* Custom styles */
 .article-list-item a, .promoted-articles-item a {
     font-weight: 600;
-    color: rgba(9, 112, 206, 1)!important;
+    color: #4F48BD!important;
 }
 .nav-wrapper a.p-top-nav-link {
-  color: #557789;
+  color: #403F4F;
   font-size: 1rem;
   font-weight: 500;
   padding-right: 2.5rem;
@@ -22,7 +22,7 @@ html {
 .portify-footer {
   font-size: 80%;
   font-weight: 400;
-  color: #557789;
+  color: #403F4F;
 }
 
 .lead-title {
@@ -272,7 +272,7 @@ template {
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: "Open Sans", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
+  font-family: "Nunito", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -2094,7 +2094,7 @@ ul {
   -webkit-hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-family: "Open Sans", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
+  font-family: "Nunito", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -2645,7 +2645,7 @@ ul {
 }
 
 .post-content {
-  font-family: "Open Sans", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
+  font-family: "Nunito", BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;;
   line-height: 1.6;
   word-break: break-word;
 }
